@@ -75,9 +75,3 @@ p {
 .btn:hover {
   background-color: #f1e9df;
 }
-
-.btn {
-  width: 600px;
-  max-width: none;
-  background-color: white; /* para ver visualmente */
-}
