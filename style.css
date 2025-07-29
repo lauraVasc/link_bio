@@ -1,0 +1,83 @@
+/* Reset e estilo base */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Playfair Display', serif;
+  background-color: #dcd1c1;
+  color: #3b2f2f;
+}
+
+/* Imagem no topo, metade da tela */
+.hero-image {
+  position: relative;
+  height: 40vh;
+  background-image: url('image/imagem01.jpg'); /* ajuste o caminho conforme necessário */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Gradiente sutil na parte de baixo da imagem */
+.overlay-gradient {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, #dcd1c1 100%);
+}
+
+/* Conteúdo principal abaixo da imagem */
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: transparent;
+  padding: 40px 20px;
+  max-width: 100%;
+  z-index: 2;
+}
+
+
+/* Título */
+h1 {
+  margin: 10px 0 5px;
+  font-size: 24px;
+}
+
+/* Subtítulo */
+p {
+  margin: 0 0 30px;
+  font-size: 14px;
+  color: #5c4a3d;
+}
+
+/* Botões */
+.btn {
+  display: block;
+  background-color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 999px;
+  margin: 10px auto;
+  text-decoration: none;
+  color: #3b2f2f;
+  font-size: 15px;
+  font-weight: 500;
+  width: 100%;
+  max-width: 500px;  /* aumentado para deixar mais largo */
+  box-sizing: border-box;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #f1e9df;
+}
+
+.btn {
+  width: 600px;
+  max-width: none;
+  background-color: white; /* para ver visualmente */
+}
